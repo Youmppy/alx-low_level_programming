@@ -3,9 +3,11 @@
 #include <string.h>
 /**
  * _strlen - length of code
- * @s:string
+ * @s: string
+ * return: 0
  */
 int _strlen(char *s)
 {
 size_t strlen(*s);
+return (0);
 }
