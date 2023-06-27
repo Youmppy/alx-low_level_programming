@@ -2,12 +2,16 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strlen - length of code
+ * _strlen - prints the length on str
  * @s: string
- * return: 0
+ * Return: i
  */
 int _strlen(char *s)
 {
-size_t strlen(*s);
-return (0);
+int i;
+for (i = 0 ; *s != "\0'; i++)
+{
+	s++;
+}
+return (i);
 }
