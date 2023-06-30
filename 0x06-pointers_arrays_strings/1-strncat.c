@@ -7,17 +7,19 @@
 *@dest: string's destination
 *Return: pointer to the rsulting dest's string
 */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int x, y;
+	int i;
+	int i2 = 0;
 
-	for (x = 0; dest[x] != '\0'; x++)
+	for (i = 0; *(dest + i) != '\0'; i++)
+		;
+	for (i2 = 0; *(src + i) != '\0' &&  i < n; i++)
 	{
-		continue;
+		dest[i] = src[i2];
+		i++;
+		i2++;
 	}
-	for (y = 0; src[y] != '\0' && y < n; y++)
-	{
-		dest[x + y] = src[y];
-	}
-	dest[x + y] = '\0';
 	return (dest);
+}
