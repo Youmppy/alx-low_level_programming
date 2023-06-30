@@ -1,26 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * *_strncat - adds 2nd to 1st
- * @dest: 1st stt
- * @src: 2md str
- * @n: num of int
- * Return: dest new value.
- */
-
+*_strncat - a program that concatenates two strings
+*@n: length of integer
+*@src: string's source
+*@dest: string's destination
+*Return: pointer to the rsulting dest's string
+*/
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int i2 = 0;
+	int x, y;
 
-	for (i = 0; *(dest + i) != '\0'; i++)
-		;
-
-	while (i2 < n)
+	for (x = 0; dest[x] != '\0'; x++)
 	{
-		dest[i] = src[i2];
-		i++;
-		i2++;
+		continue;
 	}
+	for (y = 0; src[y] != '\0' && y < n; y++)
+	{
+		dest[x + y] = src[y];
+	}
+	dest[x + y] = '\0';
 	return (dest);
-}
