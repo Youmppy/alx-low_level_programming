@@ -24,6 +24,10 @@ int helpc(int n, int i)
 	{
 		return (helpc(n, i + 1));
 	}
+	else
+	{
+		return (1);
+	}
 }
 
 /**

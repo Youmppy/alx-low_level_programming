@@ -16,7 +16,7 @@ int help(int n, int i)
 	{
 		return (help(n, i + 1));
 	}
-	if (i > n)
+	else
 	{
 		return (-1);
 	}
