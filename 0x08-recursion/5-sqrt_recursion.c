@@ -16,9 +16,13 @@ int help(int n, int i)
 	{
 		return (help(n, i + 1));
 	}
-	else
+	if (i > n)
 	{
 		return (-1);
+	}
+	else
+	{
+		return(-1);
 	}
 }
 
