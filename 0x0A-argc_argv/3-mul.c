@@ -5,7 +5,7 @@
  * main - prints name
  * @argv: arg value
  * @argc: arg count
- * Return: 0
+ * Return: 0 true 1 faulse
  */
 
 int main(int argc, char *argv[])
@@ -13,8 +13,11 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		printf("%d", argv[1] * argv[2]);
+		return (0);
 	}
-	return (0);
+	else
+	{
+		printf("Error");
+		return (1);
+	}
 }
-
-
