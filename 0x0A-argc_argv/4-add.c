@@ -40,9 +40,9 @@ if( n >= 10)
 if( n >= 1)
 {
 	n= n - 1;
-	c++
+	c++;
 }
 }
-printf(“%d”,c0;
+printf(“%d”,c0);
 }
 
