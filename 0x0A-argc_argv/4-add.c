@@ -14,17 +14,17 @@ int main(int argc, char *argv[])
 int i = 1;
 int n;
 
-if (argc >0)
-	{
-		printf("Error\n");
-		return (1);
-	}
+if(argc >0)
+{
+	printf("Error\n");
+	return (1);
+}
 
-while (i != argc)
-	{
-		n = i + atoi(argv[i]);
-		printf ("%d\n", i);
-		i++;
-	}
+while(i != argc)
+{
+	n = i + atoi(argv[i]);
+	printf ("%d\n", i);
+	i++;
+}
 return (0);
 }
