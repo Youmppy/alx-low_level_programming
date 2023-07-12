@@ -23,9 +23,9 @@ return (1);
 while (i != argc - 1)
 {
 n = n + atoi(argv[i]);
-printf("%d\n", n);
 i++;
 }
+printf("%d\n", n);
 return (0);
 }
 
