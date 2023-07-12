@@ -33,7 +33,7 @@ while (i < argc)
 		}
 		j++;
 	}
-	if(error != 1)
+	if (error != 1)
 	{
 	n = n + atoi(argv[i]);
 	i++;
