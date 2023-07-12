@@ -20,7 +20,7 @@ printf("Error\n");
 return (1);
 }
 
-while (i != argc - 1)
+while (i < argc)
 {
 n = n + atoi(argv[i]);
 i++;
