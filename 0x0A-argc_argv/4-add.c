@@ -22,8 +22,17 @@ return (1);
 
 while (i < argc)
 {
-n = n + atoi(argv[i]);
-i++;
+	while (argv[i][j] != '\0')
+	{
+		if (argv[i][j] < '0' || argv[i][j] > '9')
+		{
+			printf("Error\n");
+			return (1);
+		}
+		j++;
+	}
+	n = n + atoi(argv[i]);
+	i++;
 }
 printf("%d\n", n);
 return (0);
