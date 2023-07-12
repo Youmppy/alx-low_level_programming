@@ -12,19 +12,19 @@
 int main(int argc, char *argv[])
 {
 int i = 1;
-int n;
+Int n;
 
-if(argc >0)
+If (argc >0)
 {
-	printf("Error\n");
-	return (1);
+printf("Error\n");
+return (1);
 }
 
-while(i != argc)
+while (i != argc)
 {
-	n = i + atoi(argv[i]);
-	printf ("%d\n", i);
-	i++;
+n = n + atoi(argv[i]);
+printf("%d\n", n);
+i++;
 }
 return (0);
 }
