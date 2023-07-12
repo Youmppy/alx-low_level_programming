@@ -12,36 +12,37 @@
 int main(int argc, char *argv[])
 {
 int i = argc;
-Int n =  atoi(argv[1]);
-Int c = 0;
+int n =  atoi(argv[1]);
+int c = 0;
 
-While(n != 0)
+while(n != 0)
 {
-if( n >= 25)
-{
-	n= n - 25;
-	c++;
+	else if( n >= 25)
+	{
+		n= n - 25;
+		c++;
+	}
+	else if( n >= 2)
+	{
+		n= n - 25;
+		c++;
+	}
+	else if (n >= 5)
+	{
+		n= n - 5;
+		c++;
+	}
+	else if (n >= 10)
+	{
+		n= n - 10;
+		c++;
+	}
+	else if (n >= 1)
+	{
+		n= n - 1;
+		c++
+	}
 }
-if( n >= 2)
-{
-	n= n - 25;
-	c++;
-}
-if( n >= 5)
-{
-	n= n - 5;
-	c++;
-}
-if( n >= 10)
-{
-	n= n - 10;
-	c++;
-}
-if( n >= 1)
-{
-	n= n - 1;
-	c++
-}
-}
-printf(“%d”,c);
+printf("%d\n",c);
+return (0);
 }
