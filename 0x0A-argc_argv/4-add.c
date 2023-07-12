@@ -39,11 +39,15 @@ while (i < argc)
 	i++;
 	}
 	else
+}
+if (error == 1)
 	{
 		printf("Error\n");
 		return (1);
 	}
+else
+{
+	printf("%d\n", n);
+	return (0);
 }
-printf("%d\n", n);
-return (0);
 }
