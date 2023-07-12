@@ -36,7 +36,7 @@ while (i < argc)
 	n = n + atoi(argv[i]);
 	i++;
 }
-printf ("%d\n", n);
+printf("%d\n", n);
 return (0);
 }
 
