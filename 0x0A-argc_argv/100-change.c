@@ -43,5 +43,5 @@ if( n >= 1)
 	c++
 }
 }
-printf(“%d”,c0;
+printf(“%d”,c);
 }

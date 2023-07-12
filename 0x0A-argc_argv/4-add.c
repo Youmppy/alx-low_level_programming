@@ -6,43 +6,25 @@
  * main - prints int 1 + int 2
  * @argv: arg value
  * @argc: arg count
- * Return: 0 true 1 false
+ * Return: 0 true 1 faulse
  */
 
 int main(int argc, char *argv[])
 {
-int i = argc;
-Int n =  atoi(argv[1]);
-Int c = 0;
+int i = 1;
+int n;
 
-While(n != 0)
-{
-if( n >= 25)
-{
-	n= n - 25;
-	c++;
-}
-if( n >= 2)
-{
-	n= n - 25;
-	c++;
-}
-if( n >= 5)
-{
-	n= n - 5;
-	c++;
-}
-if( n >= 10)
-{
-	n= n - 10;
-	c++;
-}
-if( n >= 1)
-{
-	n= n - 1;
-	c++;
-}
-}
-printf(“%d”,c0);
-}
+if (argc >0)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
+while (i != argc)
+	{
+		n = i + atoi(argv[i]);
+		printf ("%d\n", i);
+		i++;
+	}
+return (0);
+}
