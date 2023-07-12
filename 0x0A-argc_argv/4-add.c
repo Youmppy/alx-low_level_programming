@@ -22,6 +22,8 @@ return (1);
 
 while (i < argc)
 {
+	int j = 0;
+
 	while (argv[i][j] != '\0')
 	{
 		if (argv[i][j] < '0' || argv[i][j] > '9')
