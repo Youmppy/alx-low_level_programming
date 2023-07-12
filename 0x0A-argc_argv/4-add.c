@@ -38,7 +38,6 @@ while (i < argc)
 	n = n + atoi(argv[i]);
 	i++;
 	}
-	else
 }
 if (error == 1)
 	{
