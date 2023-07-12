@@ -12,9 +12,9 @@
 int main(int argc, char *argv[])
 {
 int i = 1;
-Int n;
+int n;
 
-If (argc >0)
+if (argc > 0)
 {
 printf("Error\n");
 return (1);
