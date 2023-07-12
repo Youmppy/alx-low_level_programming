@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 int i = 1;
 int n;
 
-if (argc == 0)
+if (argc == 1)
 {
 printf("Error\n");
 return (1);
@@ -28,3 +28,4 @@ i++;
 }
 return (0);
 }
+
