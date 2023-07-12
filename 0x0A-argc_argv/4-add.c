@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 int i = 1;
 int n = 0;
-
+int error = 0;
 if (argc == 1)
 {
 printf("Error\n");
@@ -28,13 +28,21 @@ while (i < argc)
 	{
 		if (argv[i][j] < '0' || argv[i][j] > '9')
 		{
-			printf("Error\n");
-			return (1);
+			error = 1;
+			break;
 		}
 		j++;
 	}
+	if(error != 1)
+	{
 	n = n + atoi(argv[i]);
 	i++;
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 }
 printf("%d\n", n);
 return (0);
