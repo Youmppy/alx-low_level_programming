@@ -39,4 +39,3 @@ while (i < argc)
 printf("%d\n", n);
 return (0);
 }
-
