@@ -9,7 +9,7 @@
  * Return: Nothing.
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	int i = 0;
 	int n = 0;
