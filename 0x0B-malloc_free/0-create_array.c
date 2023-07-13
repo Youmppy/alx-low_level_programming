@@ -3,16 +3,16 @@
 #include <stdlib.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * create_array - creates an array
+ * @size: identifies the size
+ * @c: char
  *
  * Return: Nothing.
  */
 
 char *create_array(unsigned int size, char c)
 {
-	int i = 1;
+	int i = o;
 
 	if (size == 0)
 	{
@@ -27,6 +27,6 @@ char *create_array(unsigned int size, char c)
 			ptr[i] = c;
 			i++
 		}
-
+		return (ptr);
 	}
 }
