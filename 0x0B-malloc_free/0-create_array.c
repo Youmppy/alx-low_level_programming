@@ -12,7 +12,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int i = o;
+	int i = 0;
 
 	if (size == 0)
 	{
@@ -25,7 +25,7 @@ char *create_array(unsigned int size, char c)
 		while (i < size)
 		{
 			ptr[i] = c;
-			i++
+			i++;
 		}
 		return (ptr);
 	}
