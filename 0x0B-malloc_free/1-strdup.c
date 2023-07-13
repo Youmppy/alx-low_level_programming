@@ -3,32 +3,34 @@
 #include <stdlib.h>
 
 /**
- * _strdup - creates an array
- * @str: identifies the size
+ * _strdup - creates a duplicate of a string
+ * @str: string to duplicate
  *
- * Return: Nothing.
+ * Return: Pointer to the duplicated string, or NULL if it fails
  */
-
 char *_strdup(char *str)
 {
 	int i = 0;
 	int n = 0;
 
-	while (str[i] != "\0")
+	while (str[i] != '\0')
 	{
 		i++;
 	}
-		char *ptr = malloc(i + 1);
 
-		if (ptr == NULL)
-		{
-			return (NULL);
-		}
-		while (n != i)
-		{
-			ptr[n] = str[n];
-			n++;
-		}
-		return (ptr);
+	char *ptr = malloc((i + 1) * sizeof(char));
+
+	if (ptr == NULL)
+	{
+		return (NULL);
 	}
+
+	while (n < i)
+	{
+		ptr[n] = str[n];
+		n++;
+	}
+	ptr[n] = '\0';
+
+	return (ptr);
 }
