@@ -4,7 +4,7 @@
  * struct dog - a fog struct
  * @name: dog's name
  * @age: dog's age
- * @owne: dog's owner
+ * @owner: dog's owner
  *
  * Description: dog's data
  */
@@ -14,4 +14,4 @@ struct dog {
     char *owner;
 };
 
-#endif /* DOG_H */
+#endif
