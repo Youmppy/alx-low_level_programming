@@ -1,6 +1,14 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+/**
+ *  sum_them_all - sum of args
+ *  @n: number of args
+ *  @...: int
+ *
+ *  Return: sum or ints
+ */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	int sum = 0;
@@ -16,9 +24,9 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg (ptr, int);
+		sum += va_arg(ptr, int);
 	}
 
-	va_end (ptr);
+	va_end(ptr);
 	return (sum);
 }
