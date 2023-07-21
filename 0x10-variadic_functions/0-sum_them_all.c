@@ -20,6 +20,8 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 	}
 
+	else
+	{
 	va_start(ptr, n);
 
 	for (i = 0; i < n; i++)
@@ -29,4 +31,5 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(ptr);
 	return (sum);
+	}
 }
