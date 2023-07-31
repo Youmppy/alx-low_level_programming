@@ -7,12 +7,14 @@
  * @h: A pointer to the head of the linked list.
  *
  * Description: This function prints all the elements of a linked list of
- *              type list_t. Each element is printed in the format: [len] str
+ *              type list_t. Each element is printed in the format: [len]
+ *              str
  *              where len is the length of the string and str is the string
  *              itself. If str is NULL, it prints [0] (nil).
  *
  * Return: The number of nodes in the linked list.
  */
+
 size_t print_list(const list_t *h)
 {
 	int n = 1;
@@ -29,6 +31,7 @@ size_t print_list(const list_t *h)
 			n++;
 		}
 	printf("[%d] %s\n", h->len, h->str);
+	return (n);
 	}
 	return (0);
 }
