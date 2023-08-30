@@ -7,7 +7,7 @@
  *
  * Return: The length of the string.
  *
- * Description: This function recursively calculates the length of the input string.
+ * Description: This function recursively calculates the length of inp.
  */
 int _strlen_recursion(char *s)
 {
@@ -19,6 +19,6 @@ int _strlen_recursion(char *s)
 		s++;
 		return (i + _strlen_recursion(s));
 	}
-	return(0);
+	return (0);
 }
 
