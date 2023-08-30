@@ -14,7 +14,7 @@ int _prime(int n, int v)
 		return (1);
 	if (n % v == 0)
 		return (0);
-	
+
 	return (_prime(n, v + 1));
 }
 
@@ -28,6 +28,6 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	
+
 	return (_prime(n, 2));
 }
