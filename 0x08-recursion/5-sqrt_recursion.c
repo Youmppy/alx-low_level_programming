@@ -11,11 +11,11 @@
 int _sqrt_twoinp(int n, int a)
 {
 	if (a * a == n)
-		return a;
+		return (a);
 	if (a * a > n)
-		return _sqrt_twoinp(n, a + 1);
+		return (_sqrt_twoinp(n, a + 1));
 	else
-		return -1;
+		return (-1);
 }
 
 /**
@@ -26,5 +26,5 @@ int _sqrt_twoinp(int n, int a)
  */
 int _sqrt_recursion(int n)
 {
-	return _sqrt_twoinp(n, 1);
+	return (_sqrt_twoinp(n, 1));
 }
