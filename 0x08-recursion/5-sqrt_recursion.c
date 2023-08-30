@@ -12,7 +12,7 @@ int _sqrt_twoinp(int n, int a)
 {
 	if (a * a == n)
 		return (a);
-	if (a * a > n)
+	if (a * a < n)
 		return (_sqrt_twoinp(n, a + 1));
 	else
 		return (-1);
