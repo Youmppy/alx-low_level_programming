@@ -8,7 +8,7 @@
  *
  * Return: The result of x raised to the power of y.
  *
- * Description: This function recursively calculates x raised to the power of y.
+ * Description: recursively calculates x raised to the power of y.
  */
 int _pow_recursion(int x, int y)
 {
