@@ -10,6 +10,10 @@
  */
 int main(int argc, char *argv[])
 {
+	int num1 = 0;
+	int num2 = 0;
+	int result = 0;
+
 	if (argc != 3)
 	{
 		/* Print an error message and return 1 if argc is not 3 */
@@ -17,9 +21,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
-	int result = num1 * num2;
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
 
 	/* Print the result of the multiplication */
 	printf("%d\n", result);
