@@ -18,9 +18,10 @@ char i = 0;
 		printf("%d\n", i);
 		return (0);
 	}
-	else
+	if (argc != 3)
 	{
-	printf("Error");
+	printf("Error\n");
 	return (1);
 	}
+	return (1);
 }
