@@ -10,9 +10,6 @@
  */
 int main(int argc, char *argv[])
 {
-	/* Print the first command-line argument (program name) */
-	_putchar(argv[0]);
-	/* Print a newline character */
-	_putchar("\n");
+	printf("%s\n", argv[0]);
 	return (0);
 }
