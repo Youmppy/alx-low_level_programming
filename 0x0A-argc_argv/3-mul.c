@@ -18,6 +18,6 @@ char i = 0;
 		printf("%d\n", i);
 		return (0);
 	}
-
+	printf("Error");
 	return (1);
 }
