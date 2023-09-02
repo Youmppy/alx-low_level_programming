@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (i = 0; n > 0; i++)
+	while (n != 0)
 	{
 		if (n >= 25)
 			n = n - 25;
@@ -37,6 +37,7 @@ int main(int argc, char *argv[])
 			n = n - 2;
 		if (n >= 1)
 			n = n - 1;
+		i++;
 	}
 	printf("%d\n", i);
 	return (0);
