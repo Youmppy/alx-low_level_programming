@@ -6,7 +6,7 @@
  * @argc: The number of command-line arguments.
  * @argv: An array containing the command-line arguments.
  *
- * Return: 0 on success.
+ * Return: 0 on success, 1 on error.
  */
 int main(int argc, char *argv[])
 {
@@ -22,16 +22,18 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (c = argv[i]; *c < '0' || *c > '9'; c++)
+			for (c = argv[i]; *c != '\0'; c++)
 			{
-				printf("Error\n");
-				return (1);
+				if (*c < '0' || *c > '9')
+				{
+					printf("Error\n");
+					return 1;
+				}
 			}
-			s +=  atoi(argv[i]);
+			s += atoi(argv[i]);
 		}
-	printf("%d\n", s);
+		printf("%d\n", s);
 	}
 
 	return (0);
 }
-
