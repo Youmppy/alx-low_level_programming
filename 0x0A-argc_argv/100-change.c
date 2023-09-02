@@ -17,9 +17,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int n = atoi(argv[1]);
+	int n = 0;
 	int i = 0;
 
+	n = atoi(argv[1]);
 	if (n > 0)
 	{
 		printf("0\n");
@@ -41,4 +42,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
