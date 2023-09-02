@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (i = 0; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			for (c = argv[i]; *c < '0' || *c > '9'; c++)
 			{
