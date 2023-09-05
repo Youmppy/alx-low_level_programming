@@ -3,10 +3,11 @@
 #include "main.h"
 
 /**
- * _strdup - Duplicates a string to a new memory space location.
- * @str: The string to be duplicated.
+ * str_concat - Concatenates two strings.
+ * @s1: The first string.
+ * @s2: The second string.
  *
- * Return: A pointer to the duplicated string, or NULL if memory allocation fails.
+ * Return: concatenated string, or NULL if memory allocation fails.
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -21,20 +22,22 @@ char *str_concat(char *s1, char *s2)
 	for (c1 = 0; s1[c1] != '\0'; c1++)
 		;
 	for (c2 = 0; s2[c2] != '\0'; c2++)
-		;	
+		;
 
 	array = malloc(c1 + c2 + 1);
 
 	if (array == NULL)
 		return (NULL);
 
-	for (i = 0; i != c1; i++)
+	for (i = 0; i < c1; i++)
 		array[i] = s1[i];
-	for (c1 = 0; c1 != c2; c1++)
+	for (c1 = 0; c1 < c2; c1++)
 	{
-		i++;
 		array[i] = s2[c1];
+		i++;
 	}
+
+	i++;
 
 	array[i] = '\0';
 
