@@ -7,7 +7,7 @@
  * @ac: The number of arguments.
  * @av: An array of pointers to the arguments.
  *
- * Return: A pointer to the concatenated string, or NULL if memory allocation fails.
+ * Return:the concatenated string, or NULL if memory allocation fails.
  */
 char *argstostr(int ac, char **av)
 {
