@@ -16,13 +16,24 @@ char *str_concat(char *s1, char *s2)
 	int c1 = 0;
 	int c2 = 0;
 
+	if (c1 && c2)
+	{
 	for (c1 = 0; s1[c1] != '\0'; c1++)
 		;
 	for (c2 = 0; s2[c2] != '\0'; c2++)
 		;
-
+	}
+	if (c1 && !c2)
+	{
+		for (c1 = 0; s1[c1] != '\0'; c1++)
+			;
+	}
+	if (!c1 && c1)
+	{
+		for (c2 = 0; s2[c2] != '\0'; c2++)
+			;
+	}
 	array = malloc(c1 + c2 + 1);
-
 	if (array == NULL)
 		return (NULL);
 
