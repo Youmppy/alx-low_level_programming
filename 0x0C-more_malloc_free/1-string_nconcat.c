@@ -14,9 +14,9 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *array;
-	int i = 0;
-	int c1 = 0;
-	int c2 = 0;
+	unsigned int i = 0;
+	unsigned int c1 = 0;
+	unsigned int c2 = 0;
 
 	if (s1 && s2)
 	{
