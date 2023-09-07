@@ -10,38 +10,41 @@
  *
  * Return: A pointer to the concatenated string or NULL on memory failure.
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *array;
-	unsigned int i = 0;
-	unsigned int c1 = 0;
-	unsigned int c2 = 0;
+	char *concatenated;
+	unsigned int len1 = 0, len2 = 0, i, j;
 
-	if (s1 && s2)
+	if (s1)
 	{
-		for (c1 = 0; s1[c1] != '\0'; c1++)
-			;
-		for (c2 = 0; s2[c2] != '\0' && c2 < n; c2++)
-			;
+		while (s1[len1] != '\0')
+			len1++;
 	}
-	if (s1 && !s2)
-		for (c1 = 0; s1[c1] != '\0'; c1++)
-			;
-	if (!s1 && s2)
-		for (c2 = 0; s2[c2] != '\0' && c2 < n; c2++)
-			;
-	array = malloc(c1 + c2 + 1);
-	if (array == NULL)
-		return (NULL);
-	for (i = 0; i < c1; i++)
-		array[i] = s1[i];
-	for (c1 = 0; c1 < c2; c1++)
+
+	if (s2)
 	{
-		array[i] = s2[c1];
+		while (s2[len2] != '\0')
+			len2++;
+	}
+
+	if (n >= len2)
+		n = len2;
+
+	concatenated = malloc((len1 + n + 1) * sizeof(char));
+
+	if (concatenated == NULL)
+		return (NULL);
+
+	for (i = 0; i < len1; i++)
+		concatenated[i] = s1[i];
+
+	for (j = 0; j < n; j++)
+	{
+		concatenated[i] = s2[j];
 		i++;
 	}
-	i++;
-	array[i] = '\0';
-	return (array);
+
+	concatenated[i] = '\0';
+
+	return (concatenated);
 }
