@@ -34,9 +34,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	array = malloc(c1 + c2 + 1);
 	if (array == NULL)
 		return (NULL);
-	for (i = 0; i < n; i++)
+	for (i = 0; i < c1; i++)
 		array[i] = s1[i];
-	for (c1 = 0; c1 < n; c1++)
+	for (c1 = 0; c1 < c2; c1++)
 	{
 		array[i] = s2[c1];
 		i++;
